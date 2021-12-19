@@ -19,5 +19,5 @@
 
 * 开发环境：Intelij Idea
 
-* 浏览器：Chrome 啦啦啦
+* 浏览器：Chrome 啦啦啦aaaS
 
