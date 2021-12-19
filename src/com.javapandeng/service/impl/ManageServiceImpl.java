@@ -3,6 +3,7 @@ package com.javapandeng.service.impl;
 import com.javapandeng.base.BaseDao;
 import com.javapandeng.base.BaseServiceImpl;
 
+import com.javapandeng.mapper.ManageMapper;
 import com.javapandeng.po.Manage;
 import com.javapandeng.service.ManageService;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -4,23 +4,16 @@ package com.javapandeng.controller;
 import com.alibaba.fastjson.JSONObject;
 import com.javapandeng.base.BaseController;
 import com.javapandeng.po.*;
-import com.javapandeng.service.ItemCategoryService;
-import com.javapandeng.service.ItemService;
 import com.javapandeng.service.ManageService;
 import com.javapandeng.service.UserService;
-import com.javapandeng.utils.Consts;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.util.CollectionUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import utils.Consts;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * 登录相关的控制器
@@ -68,36 +61,6 @@ public class LoginController extends BaseController {
         return "/login/mLogin";
     }
 
-    /**
-     * 前端首页
-     */
-    @RequestMapping("/uIndex")
-    public String uIndex(Model model, Item item,HttpServletRequest request){
-        String sql1 = "select * from item_category where isDelete=0 and pid is null order by name";
-        List<ItemCategory> fatherList = itemCategoryService.listBySqlReturnEntity(sql1);
-        List<CategoryDto> list = new ArrayList<>();
-        if(!CollectionUtils.isEmpty(fatherList)){
-            for(ItemCategory ic:fatherList){
-                CategoryDto dto = new CategoryDto();
-                dto.setFather(ic);
-                //查询二级类目
-                String sql2 = "select * from item_category where isDelete=0 and pid="+ic.getId();
-                List<ItemCategory> childrens = itemCategoryService.listBySqlReturnEntity(sql2);
-                dto.setChildrens(childrens);
-                list.add(dto);
-                model.addAttribute("lbs",list);
-            }
-        }
-        //折扣商品
-        List<Item> zks = itemService.listBySqlReturnEntity("select * from item where isDelete=0 and zk is not null order by zk desc limit 0,10");
-        model.addAttribute("zks",zks);
-
-        //热销商品
-        List<Item> rxs = itemService.listBySqlReturnEntity("select * from item where isDelete=0 order by gmNum desc limit 0,10");
-        model.addAttribute("rxs",rxs);
-
-        return "login/uIndex";
-    }
 
     /**普通用户注册*/
     @RequestMapping("/res")
