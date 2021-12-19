@@ -19,5 +19,5 @@
 
 * 开发环境：Intelij Idea
 
-* 浏览器：Chrome 北方局肯定撒
+* 浏览器：Chrome 北方局肯定撒ja
 
