@@ -19,5 +19,5 @@
 
 * 开发环境：Intelij Idea
 
-* 浏览器：Chrome www
+* 浏览器：Chrome wwwq
 
