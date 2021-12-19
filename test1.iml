@@ -119,7 +119,6 @@
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.2.4" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:jcl-over-slf4j:1.6.1" level="project" />
     <orderEntry type="library" name="Maven: org.json:json:20190722" level="project" />
-    <orderEntry type="library" scope="TEST" name="Maven: com.oracle:ojdbc6:12.1.0.1-atlassian-hosted" level="project" />
     <orderEntry type="library" name="Maven: com.gitee.qdbp.thirdparty:ueditor:1.4.3.3" level="project" />
   </component>
 </module>
