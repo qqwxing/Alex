@@ -3,7 +3,7 @@
         "http://www.w3.org/TR/html4/loose.dtd">
 <div class="width100" style="height: 25px;background: #f0f0f0;">
     <div class="width1200 center_yh font14 c_66" style="height: 25px;line-height: 25px;">
-        <font class="left_yh">欢迎来到水果蔬菜商城！</font>
+        <font class="left_yh">欢迎来到水果商城！</font>
         <div class="right_yh" id="fast_jump">
             <c:if test="${userId!=null}">
                 <a href="#">欢迎您：${username}</a>

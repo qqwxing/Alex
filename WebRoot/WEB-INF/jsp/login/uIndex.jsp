@@ -12,7 +12,7 @@
 <body>
     <%@include file="/common/utop.jsp"%>
 <!--导航条-->
-<div class="width100" style="height: 45px;background: #dd4545;margin-top: 40px;position: relative;z-index: 100;">
+<div class="width100" style="height: 45px;background: rgba(221,165,69,0.87);margin-top: 40px;position: relative;z-index: 100;">
     <!--中间的部分-->
     <div class="width1200 center_yh relative_yh" style="height: 45px;">
         <!--列表导航-->
@@ -50,10 +50,10 @@
 <div class="width1200 center_yh hidden_yh" style="position: relative;z-index:80;">
     <div class="example2" style="width: 1200px;height: 490px;overflow: hidden;margin-left: 230px;">
         <ul>
-            <li><img src="${ctx}/resource/images/a.webp" alt=""></li>
-            <li><img src="${ctx}/resource/images/b.webp" alt=""></li>
-            <li><img src="${ctx}/resource/images/c.webp" alt=""></li>
-            <li><img src="${ctx}/resource/images/d.webp" alt=""></li>
+            <li><img src="${ctx}/resource/images/a.png" alt=""></li>
+            <li><img src="${ctx}/resource/images/b.png" alt=""></li>
+            <li><img src="${ctx}/resource/images/c.png" alt=""></li>
+            <li><img src="${ctx}/resource/images/d.png" alt=""></li>
         </ul>
     </div>
     <script>
