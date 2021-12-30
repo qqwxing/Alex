@@ -1,4 +1,4 @@
-package utils;
+package com.javapandeng.utils;
 /**
  * 用来传递列表对象的ThreadLocal数据
  * @author Administrator

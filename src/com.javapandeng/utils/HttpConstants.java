@@ -1,4 +1,4 @@
-package utils;
+package com.javapandeng.utils;
 
 public class HttpConstants {
 

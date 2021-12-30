@@ -2,7 +2,7 @@ package com.javapandeng.base;
 
 
 import org.apache.ibatis.annotations.Param;
-import utils.Pager;
+import com.javapandeng.utils.Pager;
 
 import java.io.Serializable;
 import java.util.List;

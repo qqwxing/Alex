@@ -1,4 +1,4 @@
-package utils;
+package com.javapandeng.utils;
 
 import java.sql.Timestamp;
 import java.text.DateFormat;

@@ -1,4 +1,4 @@
-package utils;
+package com.javapandeng.utils;
 
 import org.apache.solr.client.solrj.beans.Field;
 

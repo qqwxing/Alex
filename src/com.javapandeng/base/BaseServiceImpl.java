@@ -2,8 +2,8 @@ package com.javapandeng.base;
 
 
 import com.github.pagehelper.PageHelper;
-import utils.Pager;
-import utils.SystemContext;
+import com.javapandeng.utils.Pager;
+import com.javapandeng.utils.SystemContext;
 
 import java.io.Serializable;
 import java.util.Collection;
